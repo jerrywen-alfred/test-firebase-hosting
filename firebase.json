@@ -6,10 +6,19 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "appAssociation": "AUTO",
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/p/**",
+        "dynamicLinks": true
+      },
+      {
+        "source": "/premium/**",
+        "dynamicLinks": true
+      },
+      {
+        "source": "/store/**",
+        "dynamicLinks": true
       }
     ]
   }
